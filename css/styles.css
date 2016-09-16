@@ -1,0 +1,1135 @@
+/************************************************************************
+************************** VARIABLES ****************************************
+************************************************************************/
+
+#tippSuccess,
+#tippFail {
+	display: none;
+}
+
+.container-fluid {
+	max-width: 1170px;
+}
+
+
+/************************************************************************
+************************** TL24 ****************************************
+************************************************************************/
+
+/************** %%%%%%%%%%%%% ALLGEMEIN %%%%%%%%%%%%%% *********************/
+body {
+	font-family: 'PT Sans', arial, sans-serif;
+    background-color: rgb(241, 242, 246);
+}
+
+table tbody {
+    background-color: #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.regeln table tbody {
+    background-color: rgb(241, 242, 246);
+}
+
+#page-header h1 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.pagesubtitle {
+	font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+.team-logo-container {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.team-logo-container .team-logo {
+	width: 100%;
+    max-width: 200px;
+    margin: 0px auto;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.nav a,
+a.btn {
+    text-decoration: none;
+}
+
+.fancybox-nav span {
+ visibility: visible;
+}
+
+.back-button-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.slick-prev {
+    left: 5%;
+   
+}
+.slick-next {
+    right: 5%;
+
+}
+
+.slick-item {
+    height: 120px;
+    margin: 5px 1px;
+}
+
+
+/************** %%%%%%%%%%%%% HEADER %%%%%%%%%%%%%% *********************/
+
+.header { 
+	background-color: #000 !important;
+	position: fixed;
+    height: 130px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header .navbar {
+	height: 50px;
+	margin-bottom: 0px;
+    background-color: #000;
+    border: none;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #000;
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+     background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #000;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.page-header {
+	border-bottom: 1px solid #fff;
+    padding-top: 130px;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.page-header-empty {
+    padding-top: 130px;
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
+
+
+#top-header {
+	height: 80px;
+	padding-top: 15px;
+}
+		
+#loginModal .modal-dialog {
+	width: 95%;
+	background-color: #fff;;
+    margin-top: 30%;
+    max-width: 600px;
+}
+
+#loginModal .glyphicon {
+	color: #fff;
+}
+
+#loginModal .modal-header {
+	border-bottom: none;
+	padding: 5px 15px;
+}
+
+#loginModal .modal-content {
+	border-radius: 0px;
+}
+
+#loginModal .modal-content .form-group {
+	width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+
+#loginModal .modal-content .form-group .input-group-addon {
+	background-color: #19AE01;
+	border: none;
+}
+
+#loginModal .modal-content .form-group .btn-primary {
+	background-color: #19AE01 !important;
+	border: none;
+}
+
+#loginModal .modal-content .form-group button.btn.btn-ar.btn-primary.pull-right {
+	margin-top: 15px;
+}
+
+.header .login {
+	
+}
+
+.header .login .login-link,
+.header .header-navi .profil-link,
+.header .header-navi .logout-link {
+	float: right;
+	padding: 5px;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #444;
+	margin-top: 5px; 
+    text-decoration: none;
+}
+
+.header .header-navi .logout-link {
+    margin-right: 5px;
+}
+
+.header .teamname-navi {
+    color: #fff;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 12px;
+}
+
+.header .header-navi .logout {
+    float: left;
+    width: 100px;
+}
+
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+    background-color: #000;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+#loginFail {
+    margin-top: 10%;
+}
+
+#loginFail .modal-content {
+    background-color: #f2dede;
+}
+
+#loginFail .modal-content .loginFailText {
+    font-size: 1.2em;
+    padding: 50px;
+}
+
+	
+
+/************** %%%%%%%%%%%%% PAGE HEADER %%%%%%%%%%%%%% *********************/
+
+#page-header {
+	height: 150px;
+}
+
+
+/************** %%%%%%%%%%%%% PROFIL MODAL %%%%%%%%%%%%%% *********************/
+
+.panel-primary {
+    border-color: #000;
+}
+
+.panel-primary>.panel-heading {
+    background-color: #000;
+    border-color: #000;
+}
+
+.team-logo-upload form {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.pass-edit-input {
+    margin-bottom: 5px;
+}
+
+.historie-container {
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+}
+
+.editPassFail {
+    padding: 15px;
+}
+
+
+/************** %%%%%%%%%%%%% HOME  %%%%%%%%%%%%%% *********************/
+
+.home-static {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.home-static h3 {
+    font-size: 1.8em;
+}
+
+.home-static p {
+    font-size: 1.2em;
+}
+
+.titel-logo {
+    width: 140px;
+}
+
+.info-item-header {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 5px;
+}
+
+.info-item-inner {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/************** %%%%%%%%%%%%% TEAMS  %%%%%%%%%%%%%% *********************/
+
+.page-search-wrapper {
+    margin-bottom: 20px;
+}
+
+.page-search-wrapper .page-search .glyphicon {
+	width: 10%;
+    height: 34px;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+}
+
+.page-search-wrapper .page-search input {
+	width: 90%;
+	display: inline-block;
+}
+
+.teams-wrapper .team-tbl .team-tbl-row {
+    height: 40px;
+    background-color: #fff;
+}
+
+.teams-wrapper .team-tbl {
+	width: 100%;
+}
+
+.teams-wrapper .team-tbl .team-tbl-row:nth-child(odd) {
+	background-color: #efefef;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.teams-wrapper .team-tbl .team-tbl-row td {
+	padding: 0px 2px;
+}
+
+.teams-wrapper .team-tbl .first {
+	width: 35%;
+}
+
+.teams-wrapper .team-tbl .second {
+	width: 65%;
+}
+
+.teams-wrapper .team-tbl th {
+    height: 30px;
+    color: #fff;
+    padding: 0px 5px;
+}
+
+.teams-wrapper .team-tbl thead tr {
+	/* IE10+ */
+    background-image: -ms-linear-gradient(top, #363636 0%, #000 100%);    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #363636 0%, #000 100%);    /* Opera */
+    background-image: -o-linear-gradient(top, #363636 0%, #000 100%);    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #363636), color-stop(100, #000));    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #363636 0%, #000 100%);    /* W3C Markup */
+    background-image: linear-gradient(to bottom, #363636 0%, #000 100%);
+}
+
+.teams-wrapper .team-tbl .team-tbl-link {
+    color: #000;
+    text-decoration: underline;
+}
+
+/************** %%%%%%%%%%%%% LIGA  %%%%%%%%%%%%%% *********************/
+
+
+.liga .liga-select-container #spieltag-select {
+	float: right;
+    width: 30%;
+    display: inline-block;
+}
+
+.liga .liga-select-container #liga-select {
+    width: 52%;
+    display: inline-block;
+    float: right;
+}
+
+.liga .liga-select-container #spieltag-label {
+    width: 46%;
+    margin-right: 3%;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.liga .liga-select-container #liga-label {
+    width: 43%;
+    margin-right: 3%;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.liga-spiele-container {
+    margin-bottom: 45px;
+}
+
+.liga-tbl-container {
+    margin-bottom: 15px;
+}
+
+.liga-tbl-header span {
+    font-size: 1.5em;
+}
+
+.liga-tbl-header.col-xs-12 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+ 
+.liga .liga-table {
+	width: 100%;
+}
+
+.liga .liga-table th {
+    height: 30px;
+    color: #fff;
+    padding: 4px 5px;
+}
+
+.liga .liga-table thead tr {
+	/* IE10+ */
+    background-image: -ms-linear-gradient(top, #363636 0%, #000 100%);    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #363636 0%, #000 100%);    /* Opera */
+    background-image: -o-linear-gradient(top, #363636 0%, #000 100%);    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #363636), color-stop(100, #000));    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #363636 0%, #000 100%);    /* W3C Markup */
+    background-image: linear-gradient(to bottom, #363636 0%, #000 100%);
+}
+
+.liga .liga-spiele-container .tipp-header-inner {
+    float: right;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.spiel-item .matchdate {
+    width: 15%;
+    float: left;
+}
+
+.liga .liga-spiele-container .spiel-item .spiele-teams {
+    width: 40%;
+    float: left;
+}
+
+.liga .liga-spiele-container .spiel-item .liga-logo-container {
+    width: 100%;
+    float: left;
+}
+
+.liga .liga-spiele-container .spiel-item .spiele-teams-pts {
+    width: 30%;
+    float: left;
+}
+
+.liga .liga-spiele-container .spiel-item .spiele-teams-pts.not-logged-in {
+    float: right;
+}
+
+
+
+.liga .liga-spiele-container .tipp_b_container {
+    width: 30%;
+    float: left;
+    margin-top: -2px;
+    text-align: right;
+}
+
+
+
+.liga .liga-spiele-container .tipp_b_container input {
+    width: 28px;
+    height: 25px;
+}
+
+.liga .liga-spiele-container .tipp-buli-heading {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.liga .liga-spiele-container .tipp-header {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-image: -ms-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -moz-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -o-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #363636), color-stop(100, #000));
+    background-image: -webkit-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: linear-gradient(to bottom, #363636 0%, #000 100%);
+}
+
+.liga .liga-spiele-container .spiel-item {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+
+
+.liga .liga-spiele-container .spiel-item .team-logo {
+    margin: 0px 5px;
+    max-width: 20px;
+}
+
+.liga .liga-matchup-container .match-item {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.liga .liga-matchup-container .matchup_b_container {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-image: -ms-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -moz-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -o-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #363636), color-stop(100, #000));
+    background-image: -webkit-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: linear-gradient(to bottom, #363636 0%, #000 100%);
+}
+
+.liga .liga-matchup-container .matchup_b_heading {
+    font-size: 1.3em;
+    color:#fff;
+}
+
+.liga .liga-matchup-container .matchup-teams {
+    display: inline-block;
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.liga .liga-matchup-container .matchup-points {
+    display: inline-block;
+    float: right;
+    width: 15%;
+    text-align: right;
+}
+
+/************** %%%%%%%%%%%%% TIPPSCHÜTZE  %%%%%%%%%%%%%% *********************/
+
+.tippschuetze-ewig-tbl,
+#tbl-ewig {
+    display: none;
+}
+
+.header_tippschuetze {
+    margin-bottom: 10px;
+}
+
+#tbl-akt,
+#tbl-ewig {
+    font-size: 1.5em;
+}
+
+
+.tippschuetze .tippschuetze-wrapper .glyphicon-search {
+	width: 10%;
+    height: 34px;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+}
+
+.tippschuetze .tippschuetze-wrapper #tippschuetze-search {
+	width: 90%;
+	display: inline-block;
+}
+
+.tippschuetze .tippschuetze-akt-tbl,
+.tippschuetze .tippschuetze-ewig-tbl {
+	width: 100%;
+}
+
+.tippschuetze .tippschuetze-akt-tbl th,
+.tippschuetze .tippschuetze-ewig-tbl th {
+    height: 30px;
+    color: #fff;
+    padding: 4px 5px;
+}
+
+.tippschuetze .tippschuetze-akt-tbl .fa-arrow-up,
+.tippschuetze .tippschuetze-ewig-tbl .fa-arrow-up {
+    display: none;
+}
+
+.tippschuetze .tippschuetze-akt-tbl thead tr,
+.tippschuetze .tippschuetze-ewig-tbl thead tr {
+	/* IE10+ */
+    background-image: -ms-linear-gradient(top, #363636 0%, #000 100%);    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #363636 0%, #000 100%);    /* Opera */
+    background-image: -o-linear-gradient(top, #363636 0%, #000 100%);    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #363636), color-stop(100, #000));    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #363636 0%, #000 100%);    /* W3C Markup */
+    background-image: linear-gradient(to bottom, #363636 0%, #000 100%);
+}
+
+.th_sortable {
+    cursor: pointer;
+}
+
+
+/************** %%%%%%%%%%%%% POKAL  %%%%%%%%%%%%%% *********************/
+
+
+
+.pokal .pokal-select-container #pokalspieltag-label {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.pokal .pokal-select-container #pokalspieltag-select {
+    display: inline-block;
+    width: 70%;
+}
+
+.pokal .pokal-spiele-container .tipp-header {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-image: -ms-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -moz-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -o-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #363636), color-stop(100, #000));
+    background-image: -webkit-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: linear-gradient(to bottom, #363636 0%, #000 100%);
+}
+
+.pokal .pokal-spiele-container .tipp-header .tipp-pokal-heading {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.pokal .pokal-spiele-container .tipp-header .tipp-header-inner {
+    color: #fff;
+    float: right;
+}
+
+
+.pokal .pokal-spiele-container {
+    margin-bottom: 15px;
+}
+
+.pokal .pokal-spiele-container .spiel-item .pokal-teams {
+    width: 40%;
+    float: left;
+}
+
+.pokal .pokal-spiele-container .spiel-item .pokal-logo-container {
+    width: 100%;
+    float: left;
+}
+
+.pokal .pokal-spiele-container .spiel-item .spiele-pokal-teams-pts {
+    width: 30%;
+    float: left;
+}
+
+.pokal .pokal-spiele-container .spiel-item .team-logo {
+    margin: 0px 5px;
+    max-width: 20px;
+}
+
+
+
+.pokal .pokal-spiele-container .tipp_b_container {
+    width: 30%;
+    float: left;
+    margin-top: -2px;
+    text-align: right;
+}
+
+
+
+.pokal .pokal-spiele-container .tipp_b_container input {
+    width: 28px;
+    height: 25px;
+}
+
+
+.pokal .pokal-spiele-container .spiel-item {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+   background-color: #fff;
+}
+
+.pokal .pokal-spiele-container .spiel-item .spiele_b2_tipps {
+    float: right;
+    margin-top: -2px;
+    text-align: right;
+}
+
+.pokal .pokal-spiele-container .spiel-item .spiele_b2_tipps input {
+    width: 28px;
+    height: 25px;
+}
+
+.pokal .pokal-spiele-container .spiel-item .pokal-teams {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.pokal .pokal-matchups-container .matchup_bl2_container {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-image: -ms-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -moz-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -o-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #363636), color-stop(100, #000));
+    background-image: -webkit-linear-gradient(top, #363636 0%, #000 100%);
+    background-image: linear-gradient(to bottom, #363636 0%, #000 100%);
+}
+
+.pokal .pokal-matchups-container .matchup_bl2_container .matchup_b_heading {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.pokal .pokal-matchups-container .match-item {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+
+.pokal .pokal-matchups-container .matchup-teams {
+    display: inline-block;
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pokal .pokal-matchups-container .matchup-points {
+    display: inline-block;
+    float: right;
+    width: 15%;
+    text-align: right;
+}
+
+
+/************** %%%%%%%%%%%%% KONTAKT  %%%%%%%%%%%%%% *********************/
+
+.form-group.proof {
+    display: none;
+}
+
+/************** %%%%%%%%%%%%% FUNDSTÜCKE  %%%%%%%%%%%%%% *********************/
+.gallery-container {
+    margin-bottom: 15px;
+}
+
+.gallery-container .gallery-item {
+    padding: 10px;
+    border: 1px solid #E8E7E7;
+    background-color: #fff;
+}
+
+/************** %%%%%%%%%%%%% FOOTER  %%%%%%%%%%%%%% *********************/
+
+.footer {
+    margin-top: 15px;
+    background-color: #000;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    min-height: 200px;
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+
+.footer-left {
+    margin-bottom: 15px;
+}
+
+.footer-nav li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+/************** %%%%%%%%%%%%% MEDIA QUERIES  %%%%%%%%%%%%%% *******************/
+
+@media(max-width: 767px) {
+    .owl-controls .owl-pagination {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .slick-item {
+        height: 200px;
+    }
+
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+        color: #10B500;
+    }
+
+    #loginModal .modal-dialog {
+        margin-top: 15%;
+    }
+
+    .teams-wrapper .team-tbl .second {
+        width: 40%;
+    }
+
+    .liga .liga-select-container #spieltag-label {
+        width: initial;
+        margin-right: 10%;
+        display: block;
+        float: left;
+        font-size: 16px;
+    }
+
+    .liga .liga-select-container #spieltag-select {
+        float: none;
+        width: 30%;
+        display: inline-block;
+    }
+
+    .liga .liga-select-container #liga-label {
+        width: initial;
+        margin-right: 10%;
+        display: block;
+        float: left;
+        font-size: 16px;
+    }
+
+    .liga .liga-select-container #liga-select {
+        width: 52%;
+        display: inline-block;
+        float: none;
+    }
+
+
+    button[name="tippsubmit"] {
+        width: 30%;
+        float: right;
+    }
+
+    .liga .liga-spiele-container .spiel-item .liga-logo-container {
+        width: 85px;
+    }
+
+    .liga .liga-spiele-container .spiel-item .spiele-teams {
+        width: 65%;
+    }
+
+    .liga .liga-spiele-container .spiel-item .spiele-teams-pts {
+        width: 10%;
+    }
+
+    .liga .liga-spiele-container .tipp_b_container {
+        width: 10%;
+    }
+
+    .liga .liga-spiele-container .spiel-item .spiele-teams .team1 {
+        width: 40%;
+        float: left;
+        text-align: right;
+    }
+
+    .liga .liga-spiele-container .spiel-item .spiele-teams .team2 {
+        width: 40%;
+        float: left;
+        text-align: left;
+    }
+
+    .liga .liga-matchup-container .matchup-teams {
+        width: 50%;
+    }
+
+    .liga .liga-matchup-container .matchup-points {
+        width: 10%;
+    }
+
+    .visible-xs-table-block {
+        display: none;
+    }
+
+    .pokal .pokal-select-container #pokalspieltag-select {
+        width: 40%;
+    }
+
+    .pokal .pokal-spiele-container .spiel-item .pokal-logo-container {
+        width: 85px;
+    }
+
+    .pokal .pokal-spiele-container .spiel-item .pokal-teams {
+        width: 65%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .pokal .pokal-spiele-container .spiel-item .spiele-pokal-teams-pts {
+        width: 10%;
+    }
+
+    .pokal .pokal-spiele-container .spiel-item .pokal-teams .team1 {
+        width: 40%;
+        float: left;
+        text-align: right;
+    }
+
+    .pokal .pokal-spiele-container .spiel-item .pokal-teams .team2 {
+        width: 40%;
+        float: left;
+        text-align: left;
+    }
+
+    .pokal .pokal-spiele-container .spiele_b2_tipps {
+        width: 10%;
+    }
+
+    button[name="pokalsubmit"] {
+        width: 30%;
+        float: right;
+    }
+
+    .pokal .pokal-matchups-container .matchup-teams {
+        width: 50%;
+    }
+
+    .pokal .pokal-matchups-container .matchup-points {
+        wdith: 10%;
+    }
+
+    .footer-nav li {
+        float: right;
+        margin-right: 10px;
+    }
+
+    
+}
+
+@media(min-width: 992px) {
+    
+    .slick-track {
+        height: 310px;
+    }
+
+    .slick-item {
+        height: 100%;
+    }
+
+    .pokal .pokal-spiele-container .spiel-item .pokal-teams {
+        width: 60%;
+        margin-right: 5%;
+    }
+
+    .pokal .pokal-spiele-container .spiele_b2_tipps {
+        width: 10%;
+    }
+
+    .liga .liga-spiele-container .spiel-item .spiele-teams {
+        width: 60%;
+        margin-right: 5%;
+    }
+
+    .liga .liga-spiele-container .tipp_b_container {
+        width: 10%;
+    }
+
+    .liga .liga-matchup-container .match-item {
+        width: 45%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        float: left;
+    }
+
+    .liga .liga-matchup-container .matchup-teams {
+        width: 80%;
+    }
+
+    .pokal .pokal-matchups-container .match-item {
+        width: 45%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        float: left;
+    }
+
+    .pokal .pokal-matchups-container .matchup-teams {
+        width: 80%;
+    }
+
+    .gallery-container {
+        height: 245px;
+    }
+}
+
+
+/************************************************************************
+************************** ADMIN ****************************************
+************************************************************************/
+
+/************* ADMIN LOGIN FORM *****************/
+.loginform {
+	margin-top: 100px;
+}
+	
+.panel-heading {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.panel-body input[type="text"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+	padding-left: 10px !important;
+	text-transform: none;
+}
+
+.panel-body input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+	padding-left: 10px;
+	text-transform: none;
+}
+
+.panel-body .btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+
+
+
+/************* BENUTZER PAGE *****************/
+#user-table {
+	background-color: #fff;
+}
+
+#user-table th {
+	text-align: center;
+}
+
+#user-table td {
+	text-align: center;
+}
+
+
+.modal .alert {
+	display: none;
+}
+
+.modal #activateModalClose {
+	display: none;
+}
+
+
+
+
+/************** DATACENTER PAGE ******************************/
+
+#datenInputForm {
+    padding: 20px;
+    background-color: #3C8DBC;
+    border-radius: 4px;
+}
+
+#matchupFormm,
+#pokalForm,
+#createUserForm {
+    padding: 20px;
+    background-color: #3C8DBC;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
