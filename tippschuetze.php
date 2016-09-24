@@ -4,7 +4,7 @@
      include_once ("include/connect.php");
 
      if(!isset($_SESSION['login']) || !$_SESSION['login']):?>
-<html lang="de" ng-app="tl" ng-controller="siteCtrl">
+<html lang="de" ng-app="tl" ng-controller="tippschuetzeCtrl">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

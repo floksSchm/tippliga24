@@ -63,21 +63,21 @@
 					} else if(count($values->MatchResults) == 2) {
 
 						switch ($values->MatchResults[0]->ResultOrderID) {
-							case 1:
+							case 2:
 								$htPointsTeam1 = $values->MatchResults[0]->PointsTeam1;
 								$htPointsTeam2 = $values->MatchResults[0]->PointsTeam2;
 								break;
-							case 2:
+							case 1:
 								$pointsTeam1 = $values->MatchResults[0]->PointsTeam1;
 								$pointsTeam2 = $values->MatchResults[0]->PointsTeam2;
 								break;
 						}
 						switch ($values->MatchResults[1]->ResultOrderID) {
-							case 1:
+							case 2:
 								$htPointsTeam1 = $values->MatchResults[1]->PointsTeam1;
 								$htPointsTeam2 = $values->MatchResults[1]->PointsTeam2;
 								break;
-							case 2:
+							case 1:
 								$pointsTeam1 = $values->MatchResults[1]->PointsTeam1;
 								$pointsTeam2 = $values->MatchResults[1]->PointsTeam2;
 								break;

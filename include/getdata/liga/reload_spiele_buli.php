@@ -12,8 +12,8 @@
 	$result3 = mysqli_query($conn, 'SELECT slu.last_update, tw.spieltag_akt, tw.wettbewerb_spieltag FROM spiele_last_update AS slu, tipper_wettbewerb AS tw WHERE slu.wettbewerb_id = 1 AND tw.wettbewerb_id = 1');
 	while($rs3 = mysqli_fetch_assoc($result3)) {
 		$last_update = $rs3['last_update'];
-		$spieltag_akt = $rs2['spieltag_akt'];
-		$buli_spieltag = $rs2['wettbewerb_spieltag'];
+		$spieltag_akt = $rs3['spieltag_akt'];
+		$buli_spieltag = $rs3['wettbewerb_spieltag'];
 	}
 
 	/*$url0 = 'http://www.openligadb.de/api/getcurrentgroup/bl1';

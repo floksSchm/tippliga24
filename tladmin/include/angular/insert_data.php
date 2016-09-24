@@ -33,7 +33,7 @@
 
 				if(count($values->MatchResults) != 0) {
 					for($x = 0; $x < count($values->MatchResults); $x++) {
-						if($values->MatchResults[$x]->ResultOrderID == 2) {
+						if($values->MatchResults[$x]->ResultName == 'Endergebnis') {
 							if($values->MatchResults[$x]->PointsTeam1 != '') {
 								$pointsTeam1 = $values->MatchResults[$x]->PointsTeam1;
 							} else {
@@ -46,7 +46,7 @@
 								$pointsTeam2 = 0;
 							}
 						} 
-						if($values->MatchResults[$x]->ResultOrderID == 1) {
+						if($values->MatchResults[$x]->ResultName == 'Halbzeitergebnis') {
 							if($values->MatchResults[$x]->PointsTeam1 != '') {
 								$htPointsTeam1 = $values->MatchResults[$x]->PointsTeam1;
 							} else {
